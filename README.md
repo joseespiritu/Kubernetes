@@ -42,6 +42,14 @@ Learning kubernetes
 - Check the updgrade or rollback: _kubectl get resplicasets_
 - Update: _kubectl apply -f file.yaml_ or _kubectl set image deployment.apps/nameDeployment nginx=nignx:1.9.1_
 
+## Services
+
+Need a deployment and a label for the pods deployment
+
+- Create a service: _kubectl create -f file.yaml_
+- Get services: _kubectl get services_
+- Get Url service: _minikube service myapp-service --url_
+
 ### Add this to yaml extension VSCode Setting Schema
 
 ```
